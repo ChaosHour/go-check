@@ -22,10 +22,10 @@ First, clone the repository and navigate to the project directory:
 ```bash
 git clone https://github.com/ChaosHour/go-check.git
 cd go-check
+```
 
-
-# Usage
 ## Running the Tool
+
 ```Go
 ./go-check -host=192.x.x.x -database=sbtest -threads=10 -duration=60
 
