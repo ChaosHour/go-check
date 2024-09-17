@@ -70,7 +70,9 @@ All 10 connections closed.
 ```Go
 To build:
 
-go build -o go-gtids
+go build -o go-check
+
+or one of the following:
 
 FreeBSD:
 env GOOS=freebsd GOARCH=amd64 go build .
