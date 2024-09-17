@@ -24,6 +24,18 @@ git clone https://github.com/ChaosHour/go-check.git
 cd go-check
 ```
 
+## Credentials from ~/.my.cnf
+
+Using Credentials from ~/.my.cnf
+If you have your MySQL credentials stored in a ~/.my.cnf file, go-check can automatically read them. Your ~/.my.cnf file should look something like this:
+
+```bash
+[client]
+user = your_mysql_user
+password = your_mysql_password
+host = 127.0.0.1
+```
+
 ## Running the Tool
 
 ```Go
