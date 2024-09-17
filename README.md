@@ -64,3 +64,20 @@ Goroutine 7: Closing connection.
 All 10 connections closed.
 
 ```
+
+## To Build
+
+```Go
+To build:
+
+go build -o go-gtids
+
+FreeBSD:
+env GOOS=freebsd GOARCH=amd64 go build .
+
+On Mac:
+env GOOS=darwin GOARCH=amd64 go build .
+
+Linux:
+env GOOS=linux GOARCH=amd64 go build .
+```
