@@ -50,5 +50,5 @@ Goroutine 1: Closing connection.
 Goroutine 5: Closing connection.
 Goroutine 7: Closing connection.
 All 10 connections closed.
-...
+
 ```
