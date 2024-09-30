@@ -83,7 +83,8 @@ func main() {
 	var wg sync.WaitGroup
 
 	// MySQL connection string
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", *user, *password, *host, *port, *database)
+	//dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", *user, *password, *host, *port, *database)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?timeout=30s&readTimeout=30s&writeTimeout=30s", *user, *password, *host, *port, *database)
 
 	// Start the connections concurrently
 	for i := 0; i < *threads; i++ {
