@@ -18,8 +18,8 @@ jobs:
           go-version: '1.23.2'
       - name: Build
         run: |
-          GOOS=linux GOARCH=amd64 go build -o go-linux-amd64 ./cmd/go-check
-          GOOS=darwin GOARCH=amd64 go build -o go-darwin-amd64 ./cmd/go-check
+          GOOS=linux GOARCH=amd64 go build -o go-linux-amd64 ./go-check
+          GOOS=darwin GOARCH=amd64 go build -o go-darwin-amd64 ./go-check
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
