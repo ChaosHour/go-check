@@ -1,13 +1,17 @@
 # go-check
 
-`go-check` is a lightweight CLI tool built in Go to test and benchmark concurrent MySQL connections. It allows you to specify the number of threads (goroutines) that connect to a MySQL server and hold the connections open for a specified duration, simulating concurrent load on the database. This is useful for testing the performance, stability, and connection handling capacity of MySQL instances.
+A MySQL connection testing utility that helps diagnose connection management issues and performance characteristics.
 
 ## Features
 
-- Connects to a MySQL server using multiple concurrent connections (threads).
-- Allows you to configure the number of threads and the duration for which connections should be kept alive.
-- Supports reading MySQL credentials from the `~/.my.cnf` file, simplifying authentication.
-- Logs connection lifecycle, indicating when connections are established and closed.
+- Concurrent connection testing with customizable thread count
+- Gradual connection warmup support
+- Rate limiting for connection establishment
+- Batch processing of connections
+- Connection pool configuration
+- Automatic credentials loading from ~/.my.cnf
+- Real-time statistics in verbose mode
+- Graceful shutdown handling
 
 ## Use Cases
 
